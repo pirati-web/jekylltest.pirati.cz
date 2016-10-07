@@ -1,0 +1,26 @@
+<table border="1">
+  <thead>
+    <th colspan="2">
+      Variables
+    </th>
+    <th colspan="2">
+      Links
+    </th>
+  </thead>
+  <tr>
+    <td>Baseurl</td><td>{{site.baseurl}}</td>
+    <td>href: /css/main.css</td><td><a href="/css/main.css">css file</a></td>
+  </tr>
+  <tr>
+    <td>Basepath</td><td>{{site.basepath}}</td>
+    <td>href: css/main.css</td><td><a href="css/main.css">css file</a></td>
+  </tr>
+  <tr>
+    <td>Url</td><td><a href="{{site.url}}">{{site.url}}</a></td>
+    <td>href: '/css/main.css' | prepend: site.baseurl</td><td><a href="{{ '/css/main.css' | prepend: site.baseurl}}">css file</a></td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>href: 'css/main.css' | prepend: site.baseurl</td><td><a href="{{ 'css/main.css' | prepend: site.baseurl}}">css file</a></td>
+  </tr>
+</table>
